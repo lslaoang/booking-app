@@ -18,5 +18,7 @@ func main() {
 	userTickets = 3
 
 	fmt.Printf("User %v booked %v tickets. \n",userName , userTickets)
+	fmt.Printf("conferenceTickets is %T	conferenceName is %T remainingTickets is %T	userName is %T 	userTickets is %T",
+	conferenceTickets, conferenceName, remainingTickets, userName, userTickets)
 
 }
