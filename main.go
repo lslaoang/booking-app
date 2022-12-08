@@ -9,4 +9,14 @@ func main() {
 	fmt.Printf("Welcome to %s booking application! \n", conferenceName)
 	fmt.Printf("We  have total of %d tickets and %d are still available. \n", conferenceTickets, remainingTickets	)
 	fmt.Println("Get your tickets here to attend.")
+
+	var userName string
+	var userTickets int
+	//ask user to enter name
+
+	userName = "Integer"
+	userTickets = 3
+
+	fmt.Printf("User %v booked %v tickets. \n",userName , userTickets)
+
 }
