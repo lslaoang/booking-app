@@ -3,21 +3,19 @@ package main
 import "fmt"
 
 func main() {
-	var conferenceName = "Go Conference"
 	const conferenceTickets = 50
-	var remainingTickets = 50
-	var userName string
-	var userTickets int
-	//ask user to enter name
 
-	userName = "Integer"
-	userTickets = 3
-
-	fmt.Printf("User %v booked %v tickets. \n", userName, userTickets)
-	fmt.Printf("conferenceTickets is %T	conferenceName is %T remainingTickets is %T	userName is %T 	userTickets is %T",
-		conferenceTickets, conferenceName, remainingTickets, userName, userTickets)
-
+	res := author{
+        name:      "Sona",
+        branch:    "CSE",
+        particles: 203,
+        salary:    34000,
+    }
+ 
+    // Calling the method
+    res.show()
 	printThisLine()
+
 }
 
 func printThisLine() {
@@ -27,4 +25,19 @@ func printThisLine() {
 	fmt.Printf("Welcome to %s booking application! \n", conferenceName)
 	fmt.Printf("We  have total of %d tickets and %d are still available. \n", conferenceTickets, remainingTickets)
 	fmt.Println("Get your tickets here to attend.")
+}
+
+type author struct {
+	name      string
+	branch    string
+	particles int
+	salary    int
+}
+
+func (a author) show() {
+ 
+    fmt.Println("Author's Name: ", a.name)
+    fmt.Println("Branch Name: ", a.branch)
+    fmt.Println("Published articles: ", a.particles)
+    fmt.Println("Salary: ", a.salary)
 }
